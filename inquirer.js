@@ -57,31 +57,39 @@
             )
     
     const generator = (data) => `<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        </head>
-        <body>
-        <h1>
-            (hi my name is: ${data.name})
-        </h1>
-        <p>
-            (I am from; ${data.location})
-        </p>
-        <ul>
-            class="list-group"
-            <li> (My github URL is: ${data.github})</li>
-            <li>
-               (My linkedin URL is: ${data.linkedin})
-            </li>
-        </ul>
-        
-        </body>
-        </html>`
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <h1>
+       Tilte : {$data.Title}
+    </h1>
+    <p>
+        Description : ${data.description}
+    </p>
+    <ul>
+        class="list-group"
+        <li> installation instructions : ${data.installation}</li>
+        <li>
+           Program usage: ${data.usage}
+        </li>
+        <li> Contributors: ${data.contributions}</li>
+        <li>
+            test : ${data.Test}
+        </li>
+        <li> Liscense: ${data.Liscense}</li>
+        <li>
+            Want to contact me : ${data.Github}, ${data.Email}
+        </li>
+    </ul>
+    
+    </body>
+    </html>`
         
         promptUser()
         .then((data) => writeFileAsync("index.html", generator(data))
         
-        .then(() => console.log("successful!"))
+        .then(() => console.log("You have successfully made a readme!"))
         .catch((error) => console.log("error")))
     
