@@ -40,8 +40,8 @@
                     },
                     {
                         type: "input",
-                        name: "Liscense",
-                        message: "What liscense is this application under?",
+                        name: "License",
+                        message: "What license is this application under?",
                     },
                     {
                         type: "input",
@@ -63,7 +63,7 @@
     </head>
     <body>
     <h1>
-       Tilte : {$data.Title}
+       Tilte : ${data.Title}
     </h1>
     <p>
         Description : ${data.description}
@@ -78,7 +78,7 @@
         <li>
             test : ${data.Test}
         </li>
-        <li> Liscense: ${data.Liscense}</li>
+        <li> License: ${data.License}</li>
         <li>
             Want to contact me : ${data.Github}, ${data.Email}
         </li>
