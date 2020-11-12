@@ -80,7 +80,9 @@
         </li>
         <li> License: ${data.License}</li>
         <li>
-            Want to contact me : ${data.Github}, ${data.Email}
+            Want to contact me : ${data.Github}, 
+                                
+                                ${data.Email}
         </li>
     </ul>
     
